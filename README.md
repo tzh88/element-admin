@@ -63,7 +63,7 @@ Modern browsers and Internet Explorer 10+.
 
 
 ## tzh笔记
-#1.import Qs from 'Qs'  => import Qs from 'qs'
+#1.import Qs from 'Qs'  修改为=> import Qs from 'qs'
 
 #2. proxy: {
       '/admin': {
@@ -76,7 +76,7 @@ Modern browsers and Internet Explorer 10+.
       }
     }
     
-  ps：target改成mock
+  ps：target修改为-》mock
   
   
 3.  loginByLoginName: config => {
@@ -90,6 +90,6 @@ Modern browsers and Internet Explorer 10+.
     const params =Qs.parse(config.body)
     
     
-    ps:JSON.parse(config.body) -> Qs.parse(config.body)(QS用来对象互转url字符串)
+    ps:JSON.parse(config.body) 修改为=》 Qs.parse(config.body)(QS用来对象互转url字符串)
 
 
