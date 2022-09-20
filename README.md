@@ -84,6 +84,8 @@ Modern browsers and Internet Explorer 10+.
     console.log(Qs.parse(config.body))
     // const params = JSON.parse(config.body)
     const params =Qs.parse(config.body)
+    
+    
     ps:JSON.parse(config.body) -> Qs.parse(config.body)(QS用来对象互转url字符串)
 
 
