@@ -80,9 +80,13 @@ Modern browsers and Internet Explorer 10+.
   
   
 3.  loginByLoginName: config => {
+
     console.log(config)
+    
     console.log(Qs.parse(config.body))
+    
     // const params = JSON.parse(config.body)
+    
     const params =Qs.parse(config.body)
     
     
