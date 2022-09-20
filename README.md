@@ -77,7 +77,9 @@ Modern browsers and Internet Explorer 10+.
     }
     
   ps：target改成mock
-#3.  loginByLoginName: config => {
+  
+  
+3.  loginByLoginName: config => {
     console.log(config)
     console.log(Qs.parse(config.body))
     // const params = JSON.parse(config.body)
