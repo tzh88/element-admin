@@ -61,4 +61,27 @@ Modern browsers and Internet Explorer 10+.
 
 [MIT](https://github.com/umi-soft/element-admin/blob/master/LICENSE)
 
-Copyright (c) 2018-present [一路向北](https://umi-soft.github.com)
+
+## tzh笔记
+1.import Qs from 'Qs'  => import Qs from 'qs'
+
+2. proxy: {
+      '/admin': {
+        target: `http://localhost:${port}/mock`,
+        // target: 'http://localhost:8080',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/' : '/'
+        }
+      }
+    }
+    
+  ps：target改成mock
+3.  loginByLoginName: config => {
+    console.log(config)
+    console.log(Qs.parse(config.body))
+    // const params = JSON.parse(config.body)
+    const params =Qs.parse(config.body)
+    ps:JSON.parse(config.body) -> Qs.parse(config.body)(QS用来对象互转url字符串)
+
+
